@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CarImport.by</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f3e4;
+        color: #333;
+        font-size: 18px;
+        text-align: center;
+    }
+    header {
+        background-color: #c3a687;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    nav {
+        background-color: #d2b48c;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+    nav a {
+        margin: 0 10px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    nav a:hover {
+        background-color: #a98b6a;
+    }
+    .content {
+        padding: 20px;
+        display: none;
+        text-align: center;
+    }
+    .active {
+        display: block;
+    }
+    footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #c3a687;
+        color: white;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        font-size: 14px;
+    }
+    ul, ol {
+        text-align: left;
+        margin: 0 auto;
+        padding: 0;
+        max-width: 800px;
+    }
+    ul li, ol li {
+        margin-bottom: 10px;
+    }
+    blockquote {
+        font-style: italic;
+        margin: 20px auto;
+        padding: 15px;
+        max-width: 800px;
+        border-left: 4px solid #d2b48c;
+        background-color: #f5e8d8;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        margin: 10px auto;
+        display: block;
+    }
+    .review {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 15px;
+        justify-content: center;
+    }
+    .review img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+</style>
+</head>
+<body>
+<header>
+<h1>CarImport.by</h1>
+<p>Ваш надежный партнер в мире автомобилей!</p>
+</header>
+<nav>
+<a href="#main" onclick="showTab('main')">Главная</a>
+<a href="#about" onclick="showTab('about')">О нас</a>
+<a href="#services" onclick="showTab('services')">Услуги</a>
+<a href="#process" onclick="showTab('process')">Процесс</a>
+<a href="#reviews" onclick="showTab('reviews')">Отзывы</a>
+<a href="#contacts" onclick="showTab('contacts')">Контакты</a>
+</nav>
+<div class="content active" id="main">
+<h2>Добро пожаловать в CarImport.by!</h2>
+<p>Мы предоставляем комплексные решения для импорта автомобилей по самым выгодным условиям.</p>
+<ul>
+<li><strong>Индивидуальный подход:</strong> Мы учитываем все пожелания клиента, чтобы предложить идеальный автомобиль.</li>
+<li><strong>Юридическое сопровождение:</strong> Полная прозрачность и безопасность каждой сделки.</li>
+<li><strong>Быстрая доставка:</strong> Используем оптимальные маршруты и проверенные логистические решения.</li>
+<li><strong>Качество:</strong> Только проверенные автомобили, без скрытых дефектов и с полным пакетом документов.</li>
+<li>Гарантия лучшей цены на рынке.</li>
+<li>Консультации по подбору наиболее выгодного варианта.</li>
+<li>Прямые контакты с лучшими автодилерами.</li>
+<li>Сервис "под ключ" с минимальным участием клиента.</li>
+<li>Бонусы для постоянных клиентов.</li>
+<li>Кредитование и рассрочка на выгодных условиях.</li>
+<li>Возможность тест-драйва перед покупкой.</li>
+<li>Сопровождение на всех этапах сделки.</li>
+<li>Организация аукционных покупок.</li>
+<li>Установка дополнительного оборудования.</li>
+<li>Сервисное обслуживание после покупки.</li>
+</ul>
+<img src="main_photo1.jpg" alt="Добро пожаловать"/>
+</div>
+<div class="content" id="about">
+<h2>О нас</h2>
+<p>CarImport.by — это команда профессионалов с многолетним опытом работы в сфере импорта автомобилей. Мы работаем, чтобы предоставить клиентам самые выгодные предложения и высокий уровень сервиса. У нас вы найдете только проверенные автомобили, которые соответствуют всем стандартам качества.</p>
+<ul>
+<li>Многолетний опыт в автомобильной индустрии.</li>
+<li>Сотни довольных клиентов по всей стране.</li>
+<li>Налаженные контакты с зарубежными партнерами.</li>
+<li>Индивидуальный подход к каждому клиенту.</li>
+<li>Гарантия качества на все автомобили.</li>
+<li>Поддержка клиентов 24/7.</li>
+<li>Экспертный подбор автомобиля.</li>
+<li>Детальная проверка юридической чистоты авто.</li>
+<li>Постоянное совершенствование сервиса.</li>
+<li>Доверие и надежность на всех этапах.</li>
+</ul>
+<img src="about_photo1.jpg" alt="О компании"/>
+<h3>Директор компании:</h3>
+<p>Логовский Вячеслав Александрович</p>
+<img src="/mnt/data/IMG_8669.JPG" alt="Директор"/>
+</div>
+<div class="content" id="services">
+<h2>Услуги</h2>
+<ul>
+<li>Подбор автомобилей под запрос клиента с учетом всех критериев.</li>
+<li>Доставка автомобилей из США, Европы, Канады и других стран.</li>
+<li>Оформление всей необходимой документации, включая растаможку.</li>
+<li>Проведение технического осмотра и ремонта (при необходимости).</li>
+<li>Гарантийное сопровождение и юридическая поддержка сделок.</li>
+<li>Консультации по выбору наиболее подходящего автомобиля.</li>
+<li>Технический осмотр перед покупкой.</li>
+<li>Сервисное обслуживание после покупки.</li>
+<li>Программа лояльности для постоянных клиентов.</li>
+<li>Покупка автомобилей в кредит или лизинг.</li>
+<li>Продажа запчастей и аксессуаров.</li>
+<li>Страхование автомобилей.</li>
+<li>Услуги по перевозке авто.</li>
+<li>Сопровождение сделок с партнёрами за рубежом.</li>
+<li>Организация аукционных покупок.</li>
+<li>Консультации по ремонту и тюнингу.</li>
+<li>Установка дополнительного оборудования.</li>
+<li>Подготовка документов для страхования.</li>
+</ul>
+<img src="services_photo1.jpg" alt="Услуги компании"/>
+</div>
+<div class="content" id="process">
+<h2>Процесс</h2>
+<ol>
+<li><strong>Выбор автомобиля:</strong> Мы подбираем лучшие варианты на основании вашего запроса, основываясь на вашем бюджете и пожеланиях.</li>
+<li><strong>Проверка истории и состояния авто:</strong> Каждая машина проходит детальную проверку на юридическую чистоту и техническое состояние.</li>
+<li><strong>Оформление сделки:</strong> Мы сопровождаем клиента на всех этапах сделки, включая сбор и подготовку документов.</li>
+<li><strong>Доставка и растаможка:</strong> Используем только надежные логистические схемы и проводим полный процесс растаможки без участия клиента.</li>
+<li><strong>Передача автомобиля клиенту:</strong> Мы организуем передачу автомобиля с полным пакетом документов и проводим тест-драйв перед передачей.</li>
+<li><strong>Установка оборудования:</strong> Возможность установки дополнительного оборудования по желанию клиента.</li>
+<li><strong>Оплата:</strong> Гибкие схемы оплаты, включая рассрочку и кредит.</li>
+<li><strong>Гарантия:</strong> Предоставляем гарантию на все этапы сделки и автомобиль.</li>
+<li><strong>Обратная связь:</strong> Мы всегда готовы выслушать ваши пожелания для улучшения нашего сервиса.</li>
+</ol>
+<img src="process_photo1.jpg" alt="Процесс работы"/>
+</div>
+<div class="content" id="reviews">
+<h2>Отзывы</h2>
+<blockquote>"Лучший сервис для покупки авто! Спасибо за помощь!" – Алексей</blockquote>
+<blockquote>"Всё прошло быстро и без проблем. Рекомендую!" – Мария</blockquote>
+<blockquote>"Отличное качество обслуживания, профессионализм на высшем уровне." – Олег</blockquote>
+<blockquote>"CarImport.by помогли мне найти машину мечты!" – Анна</blockquote>
+<blockquote>"Ребята молодцы, быстро и качественно. Благодарю!" – Иван</blockquote>
+</div>
+</div>
+<div class="content" id="contacts">
+<h2>Контакты</h2>
+<p><a href="tel:+375291355445">Телефон: +375 29 1355445</a></p>
+<p><a href="mailto:carimport@gmail.com">E-mail: carimport@gmail.com</a></p>
+<p><a href="https://t.me/carimport_by" target="_blank">Telegram: @carimport.by</a></p>
+<p>Адрес: улица Казинца 11</p>
+<p>Вы можете связаться с нами любым удобным способом!</p>
+<img src="contacts_photo1.jpg" alt="Контакты"/>
+<iframe src="https://www.google.com/maps?q=улица Казинца 11, Беларусь&output=embed" width="600" height="450" style="border:0; display: block; margin: 20px auto;"></iframe>
+</div>
+<footer>
+<p>© 2024 CarImport.by. Все права защищены.</p>
+</footer>
+<script>
+    function showTab(tabId) {
+        const tabs = document.querySelectorAll('.content');
+        tabs.forEach(tab => tab.classList.remove('active'));
+        document.getElementById(tabId).classList.add('active');
+    }
+</script>
+</body>
+</html>
